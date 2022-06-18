@@ -9,12 +9,32 @@ body {
   font-family: "system";
 }
 
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+}
+
+.nav-item {
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
 #content {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
   align-items: center;
+}
+
+.header {
+  text-align: center;
 }
 
 .interior-photo {

@@ -4,6 +4,7 @@ import Image from './sushi-bar.jpg'
 const loadHome = () => {
   const header = document.createElement('h1');
   header.textContent = 'Welcome to Fort Wayne Sushi!';
+  header.classList.add('header');
 
   const image = document.createElement('img');
   image.src = Image;
