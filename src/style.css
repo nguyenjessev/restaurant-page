@@ -14,6 +14,8 @@ body {
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -28,9 +30,9 @@ body {
 #content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 800px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .header {
@@ -46,7 +48,39 @@ body {
   margin: 0;
 }
 
-@media all and (max-width: 400px) {
+.menu-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed black;
+  padding: 10px;
+}
+
+.menu-item-name {
+  font-weight: bold;
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.menu-item-price::before {
+  content: "$";
+}
+
+.menu-item-price {
+  text-align: right;
+  margin-top: auto;
+}
+
+@media all and (max-width: 500px) {
   body {
     margin: 0;
   }
