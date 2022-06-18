@@ -1,4 +1,27 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local("./SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  font-family: "system";
+}
+
 #content {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.interior-photo {
+  max-width: 100%;
+}
+
+.hours {
+  list-style: none;
+  margin: 0;
 }
