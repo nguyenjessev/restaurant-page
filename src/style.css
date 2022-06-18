@@ -80,6 +80,30 @@ body {
   margin-top: auto;
 }
 
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container * {
+  flex-grow: 1;
+}
+
+form * {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
 @media all and (max-width: 500px) {
   body {
     margin: 0;
